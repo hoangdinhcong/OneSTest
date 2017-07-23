@@ -32,6 +32,13 @@ OneSTest\Web.config
 3. Run Project 
 
 
+### Preview
+1. Database Structure
+![alt text](screenshots/ones_db_diagram.png "DBCSSolutionTest.bak structure")
+
+2. Program live preview
+
+
 ## Built With
 
 * [WEB MVC 5](https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started) - The web framework used
