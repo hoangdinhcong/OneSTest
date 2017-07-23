@@ -1,0 +1,21 @@
+﻿@model IEnumerable<OneSTest.category>
+
+@helper BuildMenu(IEnumerable<category> data, int? parentId = null)
+{
+var items = data.Where(d => d.parent_id == parentId);
+if (items.Any())
+{
+        <ul id="tree3">
+            @foreach (var item in items)
+            {
+                <li>
+                    @Html.ActionLink(@item.name, "Index", new { catId = item.id })
+                    @*<a href="#">@item.name</a>*@
+                    @BuildMenu(data, item.id)
+                </li>
+            }
+        </ul>
+}
+}
+
+@BuildMenu(Model, null)

@@ -1,0 +1,30 @@
+﻿@model IEnumerable<OneSTest.product>
+
+<div class="row">
+@foreach (var item in Model) { 
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-image">
+                <img class="img-responsive" src="http://lorempixel.com/555/300/sports">
+
+            </div><!-- card image -->
+
+            <div class="card-content">
+                <span class="card-title">@Html.DisplayFor(modelItem => item.name) - <small>@Html.DisplayFor(modelItem => item.category.name)</small></span>
+                <button type="button" id="show" class="btn btn-custom pull-right" aria-label="Left Align">
+                   <span class="glyphicon glyphicon-zoom-in"></span>
+                </button>
+            </div><!-- card content -->
+            <div class="card-action">
+                @Html.ActionLink("Sửa", "Edit", "Products", new { id = item.id }, new { }) 
+                @Html.ActionLink("Chi Tiết", "Details", "Products", new { id = item.id }, new { }) 
+                @Html.ActionLink("Xóa", "Delete", "Products", new { id = item.id }, new { })
+            </div><!-- card actions -->
+            <div class="card-reveal">
+                <span class="card-title">@Html.DisplayFor(modelItem => item.name)</span> <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <p>@Html.DisplayNameFor(model => model.quantity) : @Html.DisplayFor(modelItem => item.quantity)</p>
+            </div><!-- card reveal -->
+        </div>
+    </div>
+}
+</div>

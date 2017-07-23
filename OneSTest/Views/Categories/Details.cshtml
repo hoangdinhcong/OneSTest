@@ -1,0 +1,34 @@
+﻿@model OneSTest.category
+
+@{
+    ViewBag.Title = "Thông tin chi tiết";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>category</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.category2.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.category2.name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Sửa", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Trở lại danh sách", "Index")
+</p>

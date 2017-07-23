@@ -1,0 +1,14 @@
+﻿@model OneSTest.Models.ViewModelCategoryProduct
+
+@{
+    ViewBag.Title = "Home Page";
+}
+<br />
+<br />
+<div class="row">
+    <div class="col-md-3">
+        @Html.ActionLink("Tất cả danh mục", "Index", "Home")
+        @Html.Partial("_CategoriesPartial", Model.categories)
+    </div>
+    <div class="col-md-9">@Html.Partial("_ProductsPartial", Model.products)</div>
+</div>
