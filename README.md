@@ -7,12 +7,7 @@ Using Visual Studio 2017: MVC 5 and Entity FrameWork 6.x
 
 Here is the exam:
 
-> 1.       Tạo 1 CSDL trên SQL server gồm 2 bảng có nội dung như sau:
->	1.1   Bảng chứa phân loại vật tư: lưu theo nhiều cấp, trong 1 nhóm cấp 1 có nhiều nhóm con cấp 2, trong nhóm cấp 2 có nhiều nhóm con cấp 3 ( giống cây thư mục) - (ID, MaNhom, TenNhom,…..)
->	1.2   Bảng chứa danh sách vật tư - (ID, MaNhomID, MaVT, TenVT,…..)
-> 2.       Tạo 2 form nhập dữ liệu như sau
->	2.1   Form khai báo nhóm, Dùng để khai báo các nhóm vật tư và hiển thị theo cấu trúc dạng cây thư mục (nhiều cấp)
->	2.2   Form khai báo danh sách vật tư
+![alt text](screenshots/ones_exam.PNG "exam")
 
 
 ### Installing
@@ -34,10 +29,12 @@ OneSTest\Web.config
 
 ### Preview
 1. Database Structure
+
 ![alt text](screenshots/ones_db_diagram.PNG "DBCSSolutionTest.bak structure")
 
 2. Program live preview
 
+![alt text](screenshots/ones_livepreview.PNG "live preview")
 
 ## Built With
 
