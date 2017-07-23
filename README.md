@@ -34,7 +34,7 @@ OneSTest\Web.config
 
 ### Preview
 1. Database Structure
-![alt text](screenshots/ones_db_diagram.png "DBCSSolutionTest.bak structure")
+![alt text](screenshots/ones_db_diagram.PNG "DBCSSolutionTest.bak structure")
 
 2. Program live preview
 
